@@ -461,78 +461,78 @@ header .navbar ul li a:hover {
 /* about media queries ends*/
 /* about section ends */
 
-/* skills section starts */
+/* General styling for the skills section */
 .skills {
-  min-height: 90vh;
-  background: linear-gradient(to bottom, #030307, #040407);
+  padding: 60px 0;
+  background-color: #f4f4f4;
 }
-.skills h2 {
-  color: #fff;
+
+.skills .heading {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #0b0a0a;
 }
+
+.skills .heading i {
+  font-size: 4rem;
+  color: #007bff;
+}
+
 .skills .heading span {
-  color: rgb(238, 238, 234);
+  color: #007bff;
 }
+
+/* Container styling */
 .skills .container {
-  background: rgba(8, 8, 19, 0.4);
-  color: #f0e9e9;
-  border-radius: 1rem;
-  padding: 2rem;
-  width: 90%;
-  margin: auto;
-  margin-top: 2rem;
-}
-.skills .container .row {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  flex-wrap: wrap;
-  gap: 1.8rem;
-}
-.skills .container .bar {
-  margin-bottom: 15px;
-  padding: 10px;
-  border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  background: rgba(0, 0, 22, 0.9);
-  transition: 0.2s;
-}
-.skills .container .bar:hover {
-  box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
-  background-color: rgba(0, 0, 0, 0.9) !important;
-}
-.skills .container .bar .info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
 }
-.skills .container .bar .info i {
-  font-size: 4rem;
+
+/* Row styling */
+.skills .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.skills .container .bar .info span {
-  font-size: 2rem;
-  font-weight: 500;
-  font-family: "Poppins";
-  margin-left: 0.5rem;
+
+/* Bar styling */
+.skills .bar {
+  flex: 1 1 150px; /* Allow bars to grow and shrink, with a minimum width of 150px */
+  margin: 10px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-/* skills media queries starts*/
-@media screen and (max-width: 600px) {
-  .skills .container {
-    padding: 0;
-    margin: 0;
-  }
-  .skills .container .row {
-    grid-template-columns: repeat(2, 1fr);
-    margin: 1rem;
-    padding: 2rem 0.2rem 2rem 0.2rem;
-    gap: 1rem;
-  }
-  .skills .container {
-    margin-top: 5px;
-    width: 100%;
-  }
+
+.skills .bar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
-/* skills media queries ends*/
+
+/* Info styling */
+.skills .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills .info img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.skills .info span {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: bold;
+}
+
 /* skills section ends */
 
 /* education section starts */
@@ -611,11 +611,11 @@ header .navbar ul li a:hover {
   font-weight: 700;
 }
 
-/* education media queries starts*/
+/* education media queries starts */
 @media screen and (max-width: 600px) {
   .education .box-container .box {
     flex-direction: column;
-    width: 100%;
+    width: 80%;
   }
   .education .box-container .box .image {
     width: 100%;
@@ -639,8 +639,8 @@ header .navbar ul li a:hover {
     flex-wrap: wrap;
   }
 }
-/* education media queries ends*/
-/* education section ends */
+/* education media queries ends */
+
 
 /* work section starts */
 .work {
