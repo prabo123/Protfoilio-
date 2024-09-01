@@ -16,7 +16,7 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  background: #f7f7f7;
+  background: #93275d;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -32,62 +32,72 @@ html::-webkit-scrollbar{
   width: .8rem;
 }
 html::-webkit-scrollbar-track{
-  background: rgb(235, 202, 245);
+  background: rgb(223, 141, 212);
 }
 html::-webkit-scrollbar-thumb{
-  background: #420177;
+  background: #540b3f;
 }
 /* navbar starts */
-header{
+header {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  bottom: 0;
+  left: 0; 
+  right: 0;
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1.7rem 10%;
   height: 6.5rem;
-  background-color: #fff;
-  box-shadow: 0 1px 4px rgba(146,161,176,.3);
+  background: linear-gradient(to bottom, #ff007f, #000000); /* Pink to Black gradient */
+  box-shadow: 0 -1px 4px rgba(19, 20, 20, 0.3);
 }
-section{
+section {
   min-height: 100vh;
   padding: 2rem 9%;
 }
-header .logo{
+
+header .logo {
   font-size: 1.9rem;
   font-weight: 800;
   text-decoration: none;
   color: #0E2431;
 }
+
 header .logo i {
   font-size: 2.2rem;
 }
+
 header .logo:hover {
   color: #fc8c05;
 }
-header .navbar ul{
+
+header .navbar ul {
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header .navbar li{
+
+header .navbar li {
   margin-left: 2.5rem;
 }
-header .navbar ul li a{
+
+header .navbar ul li a {
   font-size: 1.57rem;
-  color: #0E2431;
+  color: #dadddf;
   font-weight: 600;
   text-decoration: none;
   letter-spacing: 0.04rem;
 }
+
 header .navbar ul li a.active,
-header .navbar ul li a:hover{
+header .navbar ul li a:hover {
   color: #011aff;
   border-bottom: .2rem solid #011aff;
   padding: .5rem 0;
 }
+
 /* navbar ends */
 
 /* hamburger icon starts*/
@@ -108,7 +118,7 @@ header .navbar ul li a:hover{
     height: 100%;
     text-align: left;
     align-items: flex-start;
-    background-color: #0e0f31;
+    background-color: #1fa9db;
   }
   header .navbar ul{
     flex-flow: column;
