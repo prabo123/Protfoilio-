@@ -17,11 +17,12 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: linear-gradient(to left, #c8c3c8, #f0ecee);
+  background: linear-gradient(to left, #f0ecf0, #f8f5f5);
   font-family: "Poppins", sans-serif;
 }
 
 *::selection {
+  
   background: #2b3dda;
   color: #fff;
 }
@@ -186,7 +187,7 @@ header .navbar ul li a:hover {
   gap: 1.5rem;
   min-height: 100vh;
   align-items: center;
-  background: linear-gradient(to bottom, #0a0a0a, #e56ed9);
+  background: linear-gradient(to bottom, #4a4848, #e5e8e8);
 }
 .home #particles-js {
   position: absolute;
@@ -209,8 +210,8 @@ header .navbar ul li a:hover {
   z-index: 1;
 }
 .home .image {
-  flex: 1 1 40rem;
-  z-index: 1;
+  flex: 1 1 50rem;
+  z-index: 10;
 }
 .home .image img {
   width: 70%;
@@ -230,7 +231,7 @@ header .navbar ul li a:hover {
 .home .content h2 span {
   font-size: 5rem;
   font-weight: 800;
-  color: #ff7b00;
+  color: #0c114f;
 }
 .home .content p {
   font-size: 2.5rem;
@@ -240,7 +241,7 @@ header .navbar ul li a:hover {
 }
 .home .content p span {
   font-size: 2.5rem;
-  color: rgb(148, 8, 8);
+  color: rgb(222, 26, 134);
   font-weight: 600;
   padding: 1rem 0;
 }
@@ -252,8 +253,8 @@ header .navbar ul li a:hover {
   border-radius: 4em;
   transition: 0.5s;
   color: #fff;
-  background: #2506ad;
-  box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
+  background: #080c63;
+  box-shadow: 0px 5px 18px rgba(12, 52, 81, 0.6);
   font-family: "Nunito", sans-serif;
 }
 .home .btn span {
@@ -379,20 +380,21 @@ header .navbar ul li a:hover {
 }
 .about .row .content h3 {
   color: rgb(27, 27, 27);
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 .about .row .content .tag {
-  font-size: 1.4rem;
+  font-size: 2.4rem;
   color: #020133;
   font-weight: 600;
   margin-top: 1rem;
 }
 .about .row .content p {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   margin-top: 1.5rem;
   font-family: "Nunito";
   font-weight: 600;
   text-transform: none;
+  
 }
 .about .row .content .box-container {
   display: flex;
@@ -438,11 +440,11 @@ header .navbar ul li a:hover {
 /* about media queries starts*/
 @media screen and (max-width: 600px) {
   .about .row .image {
-    margin-top: 2rem;
+    margin-top: rem;
   }
   .about .row .image img {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     mix-blend-mode: normal;
   }
   .about .row {
@@ -462,17 +464,17 @@ header .navbar ul li a:hover {
 /* skills section starts */
 .skills {
   min-height: 90vh;
-  background: linear-gradient(to bottom, #0a0a0a, #4a00e0);
+  background: linear-gradient(to bottom, #030307, #040407);
 }
 .skills h2 {
   color: #fff;
 }
 .skills .heading span {
-  color: rgb(255, 230, 0);
+  color: rgb(238, 238, 234);
 }
 .skills .container {
-  background: rgba(0, 0, 22, 0.4);
-  color: #fff;
+  background: rgba(8, 8, 19, 0.4);
+  color: #f0e9e9;
   border-radius: 1rem;
   padding: 2rem;
   width: 90%;
@@ -763,7 +765,7 @@ header .navbar ul li a:hover {
 /* Gallery Section Styles */
 .gallery {
   padding: 20px;
-  background-color: #f4f4f4; /* Light background for gallery section */
+  background-color: #272323; /* Light background for gallery section */
 }
 
 .heading {
